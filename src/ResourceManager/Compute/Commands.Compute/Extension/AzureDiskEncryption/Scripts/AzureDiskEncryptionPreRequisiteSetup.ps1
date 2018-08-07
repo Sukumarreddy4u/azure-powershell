@@ -22,7 +22,7 @@ Param(
   [ValidateNotNullOrEmpty()]
   [string]$subscriptionId,
 
-  [Parameter(Mandatory = $false,
+  [Parameter(Mandatory = $true,
              HelpMessage="Name of the AAD application that will be used to write secrets to KeyVault. A new application with this name will be created if one doesn't exist. If this app already exists, pass aadClientSecret parameter to the script")]
   [ValidateNotNullOrEmpty()]
   [string]$aadAppName,
